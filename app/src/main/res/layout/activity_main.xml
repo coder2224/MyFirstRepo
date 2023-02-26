@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/a1"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="103dp"
+        android:layout_marginEnd="53dp"
+        android:text="@string/bmi_calculator_developed_by_r_Upper"
+        android:textColor="#1A237E"
+        android:textSize="20sp"
+        android:background="@color/purple_200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.157"
+        tools:ignore="RelativeOverlap,TextSizeCheck" />
+
+    <EditText
+        android:id="@+id/et_input_kg"
+        android:layout_width="209dp"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="194dp"
+        android:autofillHints=""
+        android:background="#38ffffff"
+        android:drawableStart="@drawable/baseline_fitness_center_24"
+        android:hint="@string/enter_weight_in_kg"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        android:textColor="@color/design_default_color_error"
+        android:textColorHint="#3E2723"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints,DuplicateSpeakableTextCheck"
+        tools:layout_editor_absoluteY="228dp" />
+
+    <EditText
+        android:id="@+id/et_input_cm"
+        android:layout_width="211dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="258dp"
+        android:autofillHints=""
+        android:background="#38ffffff"
+        android:drawableStart="@drawable/baseline_monitor_weight_24"
+        android:hint="@string/enter_height_in_cm"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="@color/design_default_color_error"
+        android:textColorHint="#3E2723"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="294dp" />
+
+    <Button
+        android:id="@+id/btn_calculate"
+        android:layout_width="152dp"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="308dp"
+        android:contentDescription="@string/bmi_calculator_developed_by_r_Upper"
+        android:text="@string/calculate"
+        android:textColor="#81D4FA"
+        tools:ignore="MissingConstraints,DuplicateSpeakableTextCheck,VisualLintOverlap"
+        tools:layout_editor_absoluteX="125dp"
+        tools:layout_editor_absoluteY="373dp" />
+
+    <TextView
+        android:id="@+id/tv_show_value"
+        android:layout_width="205dp"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="201dp"
+        android:textColor="#3E2723"
+        android:textSize="25sp"
+        tools:ignore="MissingConstraints,TextSizeCheck"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="488dp" />
+
+    <TextView
+        android:id="@+id/message_for_user"
+        android:layout_width="242dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="93dp"
+        android:textColor="@color/design_default_color_error"
+        android:textSize="25sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="586dp"
+        android:textColorHint="@color/teal_200"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="@color/material_dynamic_neutral30"
+        android:src="@drawable/facebook"
+        android:contentDescription="@string/facebook" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="-4dp"
+        android:src="@drawable/search"
+        tools:ignore="VisualLintBounds"
+        android:contentDescription="@string/google" />
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="-2dp"
+        android:src="@drawable/whatsapp"
+        tools:ignore="ImageContrastCheck,VisualLintBounds"
+        android:contentDescription="@string/whatsapp" />
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="113dp"
+        android:src="@drawable/twitter"
+        android:contentDescription="@string/twitter" />
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="36dp"
+        android:src="@drawable/youtube"
+        android:contentDescription="@string/youtube" />
+
+
+</RelativeLayout>
